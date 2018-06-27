@@ -20,7 +20,7 @@ The following **optional** features are implemented:
 * [ x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
-1. I added a 18% tab
+1. I added an 18% tab
 2. I added images and color to the background
 3. I added additional labels to make information clear
 - [ ] List anything else that you can get done to improve the app functionality!
