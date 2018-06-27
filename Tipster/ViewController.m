@@ -37,7 +37,7 @@
 - (IBAction)onEdit:(id)sender {
     double bill = [self.billField.text doubleValue];
     
-    NSArray *percentages = @[@(0.15), @(0.2), @(0.22)];
+    NSArray *percentages = @[@(0.15), @(0.18),@(0.20), @(0.22)];
     
     double tipPercentage = [percentages[self.tipControl.selectedSegmentIndex]doubleValue];
     double tip = tipPercentage * bill;
@@ -51,8 +51,7 @@
         self.billField.frame = CGRectMake(self.billField.frame.origin.x, self.billField.frame.origin.y + 30, self.billField.frame.size.width, self.billField.frame.size.height);
     }];
     
-    [UIView animateWithDuration:1 animations:^{self.tipLabel.alpha = 0;
-    }];
+    
 }
 - (IBAction)onEditingEnd:(id)sender {
     CGRect newFrame = self.billField.frame;
@@ -63,8 +62,7 @@
         self.billField.frame = newFrame;
     }];
     
-    [UIView animateWithDuration:1 animations:^{self.tipLabel.alpha = 1;
-    }];
+   
 
 }
 
